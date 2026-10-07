@@ -1,0 +1,22 @@
+{
+  "name": "cpp-development-agent",
+  "version": "0.1.0",
+  "description": "A small, safe CLI agent that inspects a Windows machine and brings it into a working C++ development state.",
+  "type": "module",
+  "bin": {
+    "cpp-agent": "src/cli/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli/cli.js",
+    "check": "node src/cli/cli.js check",
+    "setup": "node src/cli/cli.js setup",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "os": [
+    "win32"
+  ],
+  "license": "MIT"
+}
